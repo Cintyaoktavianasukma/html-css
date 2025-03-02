@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="nav-title">Happy<span class="nav-title2">Fruits</span></h1>
+            <div class="nav-center">
+                <a href="beranda.html" class="nav-link ">Beranda</a>
+                <a href="produk.html" class="nav-link active">Produk</a>
+                <a href="kontak.html" class="nav-link ">Kontak</a>
+            </div>
+            <div class="nav-right">
+                <img src="foto/kerangjang.png" alt="Keranjang" class="icon-keranjang">
+                <button class="login">Login</button>
+            </div>
+        </nav>
+    </header>
+
+<!-- tentang kami -->
+<section id="beranda" class="oren2">
+    <!-- <div class="w3-content w3-display-container" style="max-width:400px">
+        <img class="mySlides" src="foto/anggur.png">
+        <img class="mySlides" src="foto/apel.png" style="width:10%">
+        <img class="mySlides" src="foto/jeruk2.png" style="width:10%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div> -->
+
+      <div class="slider">
+        <img src="foto/anggur.png" class="active" alt="Image 1">
+        <img src="foto/apel.png" alt="Image 2">
+        <img src="foto/pisang.png" alt="Image 3">
+        <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+        <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+    </div> 
+</section>
+
+<section id="produk" class="section putih2">
+    <div class="search">
+        <input type="search" placeholder="mau cari apa ?">
+        <img src="foto/search.png" alt="search">
+    </div>
+    <h1 style="text-align: center; margin-bottom: 30px; color: #3d3d3d;">Buah</h1>
+    
+    <div class="produk-wrapper">
+        <div class="box">
+            <img src="foto/Mangga.png" alt="Mangga Segar" class="buah">
+            <h3>Mangga Segar</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 20.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Jeruk.png" alt="Jeruk Manis" class="buah">
+            <h3>Jeruk Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 15.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;"></a>Belanja Sekarang</span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Apel.png" alt="Apel Hijau" class="buah">
+            <h3>Apel Hijau</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 18.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;"></a>Belanja Sekarang</span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Anggur.png" alt="Anggur Merah" class="buah">
+            <h3>Anggur Merah</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 30.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks">Belanja Sekarang</span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Pisang.png" alt="Pisang Manis" class="buah">
+            <h3>Pisang Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 10.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks">Belanja Sekarang</span>
+            </button>
+        </div>
+    </div>
+
+<div class="produk2">
+    <div class="produk-wrapper">
+        <div class="box">
+            <img src="foto/semangka (1).png" alt="Mangga Segar" class="buah">
+            <h3>Semangka Merah</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 20.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks">Belanja Sekarang</span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/melon.png" alt="Jeruk Manis" class="buah">
+            <h3>Melon Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 15.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks">Belanja Sekarang</span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Apel.png" alt="Apel Hijau" class="buah">
+            <h3>Apel Hijau</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 18.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Anggur.png" alt="Anggur Merah" class="buah">
+            <h3>Anggur Merah</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 30.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Pisang.png" alt="Pisang Manis" class="buah">
+            <h3>Pisang Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 10.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="produk2">
+    <div class="produk-wrapper">
+        <div class="box">
+            <img src="foto/semangka (1).png" alt="Mangga Segar" class="buah">
+            <h3>Semangka Merah</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 20.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/melon.png" alt="Jeruk Manis" class="buah">
+            <h3>Melon Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 15.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Apel.png" alt="Apel Hijau" class="buah">
+            <h3>Apel Hijau</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 18.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Anggur.png" alt="Anggur Merah" class="buah">
+            <h3>Anggur Merah</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 30.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <img src="foto/Pisang.png" alt="Pisang Manis" class="buah">
+            <h3>Pisang Manis</h3>
+            <img src="foto/bintang.png" alt="Rating" class="btg">
+            <p>IDR 10.000 / kg</p>
+            <button class="Button-belanja">
+                <span class="keranjang"><img src="foto/kerangjang2.png" alt="Keranjang"></span>
+                <span class="teks"><a href="detail.html" style="text-decoration: none; color: #fff;">Belanja Sekarang</a></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<!-- footer -->
+
+<footer class="footer hitam">
+    <div class="footerr">
+    <div>
+        <h1>Happy Fruits</14>
+        <h4>Hubungi Kami</h4>
+        <p>happyfruits@gmail.com</p>
+        <p>Surabaya, Jawa Timur, Indonesia</p>
+    </div>
+    <div>
+        <h4>Kategori</h4>
+        <a href="#">Buah</a>
+    </div>
+    <div>
+        <h4>Tautan</h4>
+        <!-- <a href="#">Beranda</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Produk</a>
+        <a href="#">Kontak</a> -->
+        <p>Beranda</p>
+        <p>Hubungi Kami</p>
+        <p>Produk</p>
+        <p>Kontak</p>
+    </div>
+    </div>
+    </div>
+     <div class="garis"></div>
+    <div class="logo-bawah">
+        <img src="foto/Facebook.png" alt="Facebook">
+        <img src="foto/Instagram.png" alt="Instagram">
+        
+    </div>
+    <div class="copyright">
+        Copyright © 2025 Happy Fruits | Made with ❤ for every people
+    </div>
+   
+</footer>
+
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-link').forEach(item => {
+                item.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+
+// geser foto
+
+let slideIndex = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+
+//     var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function currentDiv(n) {
+//   showDivs(slideIndex = n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" w3-white", "");
+//   }
+//   x[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " w3-white";
+// }
+// </script>
+</body>
+</html>

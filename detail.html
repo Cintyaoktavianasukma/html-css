@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="nav-title">Happy<span class="nav-title2">Fruits</span></h1>
+            <div class="nav-center">
+                <a href="beranda.html" class="nav-link ">Beranda</a>
+                <a href="produk.html" class="nav-link ">Produk</a>
+                <a href="kontak.html" class="nav-link ">Kontak</a>
+                
+            </div>
+            <div class="nav-right">
+                <img src="foto/kerangjang.png" alt="Keranjang" class="icon-keranjang">
+                <button class="login">Login</button>
+            </div>
+        </nav>
+    </header>
+
+
+<section id="kontak" class="section putih">
+  <h2 class="detailproduk">Detail Produk</h2>
+  <div class="detail">
+    <img src="foto/Mangga.png" alt="Mangga" class="mangga">
+    <div class="deskripsi">
+      <h3>Mangga Segar</h3>
+      <div class="rating-container">
+        <img src="foto/bintang.png" alt="Rating" class="rating"> <span>30 (reviews)</span>
+      </div>
+      <hr class="garis-pembatas">
+      <div class="atas">
+        <div class="quantity-container">
+          <button onclick="kurang()">-</button>
+          <span id="jumlah">1/2 kg</span>
+          <button onclick="tambah()">+</button>
+        </div>
+        <button class="btn-keranjang">
+          <img src="foto/keranjang3.png" alt="Keranjang" class="icon-keranjang2"> Tambahkan ke keranjang
+        </button>
+      </div>
+      <hr class="garis-pembatas">
+      <p>Categori : Buah <br> Nikmati kelezatan buah mangga segar yang dipetik langsung dari kebun. Mangga ini memiliki daging buah yang manis, lembut, dan kaya akan vitamin C, sangat cocok untuk dinikmati langsung, dibuat jus, atau sebagai bahan tambahan dalam berbagai hidangan. Dengan kulit berwarna hijau kekuningan yang menandakan kematangan sempurna, mangga ini memiliki rasa yang seimbang antara manis dan sedikit asam, memberikan sensasi segar di setiap gigitan.</p>
+    </div>
+  </div>
+
+  
+  <button class="kembali"> <a href="produk.html">Kembali</a> </button>
+  <!-- <button class="kembali"> Belanja Sekarang </button> -->
+
+  
+</section>
+
+
+<footer class="footer hitam">
+    <div class="footerr">
+    <div>
+        <h1>Happy Fruits</14>
+        <h4>Hubungi Kami</h4>
+        <p>happyfruits@gmail.com</p>
+        <p>Surabaya, Jawa Timur, Indonesia</p>
+    </div>
+    <div>
+        <h4>Kategori</h4>
+        <a href="#">Buah</a>
+    </div>
+    <div>
+        <h4>Tautan</h4>
+        <!-- <a href="#">Beranda</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Produk</a>
+        <a href="#">Kontak</a> -->
+        <p>Beranda</p>
+        <p>Hubungi Kami</p>
+        <p>Produk</p>
+        <p>Kontak</p>
+    </div>
+    </div>
+    </div>
+     <div class="garis"></div>
+    <div class="logo-bawah">
+        <img src="foto/Facebook.png" alt="Facebook">
+        <img src="foto/Instagram.png" alt="Instagram">
+        
+    </div>
+    <div class="copyright">
+        Copyright © 2025 Happy Fruits | Made with ❤ for every people
+    </div>
+   
+</footer>
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-link').forEach(item => {
+                item.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+
+// tambah keranjang
+
+let jumlah = 0.5; // Default 1/2 kg
+
+function tambah() {
+  jumlah += 0.5;
+  updateJumlah();
+}
+
+function kurang() {
+  if (jumlah > 0.5) {
+    jumlah -= 0.5;
+  }
+  updateJumlah();
+}
+
+function updateJumlah() {
+  document.getElementById("jumlah").innerText = jumlah + " kg";
+}
+
+</script>
+</body>
+</html>
